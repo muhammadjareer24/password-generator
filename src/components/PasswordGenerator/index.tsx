@@ -87,7 +87,7 @@ const PasswordGenerator = () => {
           Copy
         </button>
       </div>
-      <span className="fw-500">Weak</span>
+      {/* <span className="fw-500">Weak</span> */}
       <div className="slider">
         <div>
           <label id="slider-label">Password Length: </label>
