@@ -1,4 +1,3 @@
-// import Checkbox from './components/Checkbox'
 import PasswordGenerator from './components/PasswordGenerator'
 import './styles.css'
 import './variables.css'

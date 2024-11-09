@@ -97,7 +97,7 @@ const PasswordGenerator = () => {
           max={30}
           min={5}
           value={passwordLength}
-          onChange={(value: number | number[]) => setPasswordLength(value)}
+          onChange={(value: number | number[]) => setPasswordLength(value as number)}
           className="slider-style"
         />
       </div>
