@@ -87,7 +87,23 @@ const PasswordGenerator = () => {
           Copy
         </button>
       </div>
-      {/* <span className="fw-500">Weak</span> */}
+      <span
+        className="fw-500 status"
+        style={{
+          color:
+            password.match(/[0-9]/) && password.match(/[!@#$%^&()_+]/)
+              ? 'var(--success-color)'
+              : password.match(/[0-9]/) || password.match(/[!@#$%^&()+]/)
+              ? 'var(--warning-color)'
+              : 'var(--danger-color)',
+        }}
+      >
+        {password.match(/[0-9]/) && password.match(/[!@#$%^&*()_+]/)
+          ? 'Strong'
+          : password.match(/[0-9]/) || password.match(/[!@#$%^&*()_+]/)
+          ? 'Medium'
+          : 'Weak'}
+      </span>
       <div className="slider">
         <div>
           <label id="slider-label">Password Length: </label>
